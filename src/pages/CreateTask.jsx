@@ -8,7 +8,7 @@ const CreateTask = () => {
   const onFormSubmit = (task, name, date, isCompleted) => {
     sendRequest([{ task, name, date, isCompleted }])
       .then(() => {
-        navigate("/");
+        navigate("/crud-app-todo");
       })
       .catch((err) => {
         console.log(err);
