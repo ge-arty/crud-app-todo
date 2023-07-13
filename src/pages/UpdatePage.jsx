@@ -15,7 +15,7 @@ const UpdatePage = () => {
   const onSubmit = (task) => {
     sendRequest({ task })
       .then(() => {
-        navigate("/crud-app-todo");
+        navigate("/");
       })
       .catch((err) => {
         console.log(err);
@@ -25,7 +25,7 @@ const UpdatePage = () => {
   const finishTask = () => {
     sendRequest({ isCompleted: true })
       .then(() => {
-        navigate("/crud-app-todo");
+        navigate("/");
       })
       .catch((err) => {
         console.log(err);
